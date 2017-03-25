@@ -14,3 +14,12 @@ incondevsin -> permite a renegociação, caracteristica muito interessante, cont
 
 
 Escolhemos o nome do projeto como sendo nano9
+
+Avaliando os templates bootstrap
+
+https://bootstrapmade.com/demo/Mentor/
+
+https://bootstrapmade.com/demo/Techie/
+
+https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/?download=niceadmin.zip
+(entre todos os temas escolhemos o tema acima, baseado em html 5 com bootstrap 3)
