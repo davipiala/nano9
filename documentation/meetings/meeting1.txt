@@ -1,0 +1,16 @@
+Reunião 1
+
+BrainStorm.
+
+Optamos por olhar soluções de mercado, a intenção foi levantar posssíveis necessidades atuais dos condomímios:
+
+
+Observamos os seguintes sites:
+-socialcondo (Solução via APP) -> Solução com visão de colaboração
+-condomínio21 -> Solução com foco em controle financeiro, fluxo de caixa, permite controle de portaria, gestão de pessoal, possui um módulo de BI, criador de sites, gestão de espaços
+-conduweb -> permite assembleia virtual, mural eletrônico,  inventário, ocorrência, notificação, reserva de área comum, atividades de síndico, lista de visitantes, correspondência
+colaboradores, forum, prestadores de serviço, documentos, classificados, portaria, medidor de agua e gas.
+incondevsin -> permite a renegociação, caracteristica muito interessante, controle de fornecedores.
+
+
+Escolhemos o nome do projeto como sendo nano9
