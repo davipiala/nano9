@@ -1,0 +1,1117 @@
+<section class="wrapper">
+  <!--overview start-->
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
+      <ol class="breadcrumb">
+        <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+        <li><i class="fa fa-laptop"></i>Dashboard</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <div class="info-box blue-bg">
+        <i class="fa fa-users"></i>
+        <div class="count">274</div>
+        <div class="title">Moradores</div>
+      </div>
+      <!--/.info-box-->
+    </div>
+    <!--/.col-->
+
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <div class="info-box brown-bg">
+        <i class="fa fa-car"></i>
+        <div class="count">88</div>
+        <div class="title">Estacionamento - Carros</div>
+      </div>
+      <!--/.info-box-->
+    </div>
+    <!--/.col-->
+
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <div class="info-box dark-bg">
+        <i class="fa fa-truck"></i>
+        <div class="count">5</div>
+        <div class="title">Mudanças(Semana)</div>
+      </div>
+      <!--/.info-box-->
+    </div>
+    <!--/.col-->
+
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <div class="info-box green-bg">
+        <i class="fa fa-money"></i>
+        <div class="count">R$ 12.721,01</div>
+        <div class="title">Caixa - Condomínio</div>
+      </div>
+      <!--/.info-box-->
+    </div>
+    <!--/.col-->
+
+  </div>
+  <!--/.row-->
+
+
+  <div class="row">
+    <div class="col-lg-9 col-md-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2><i class="fa fa-map-marker red"></i><strong>Localização</strong></h2>
+          <div class="panel-actions">
+            <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+            <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+            <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
+          </div>
+        </div>
+        <div class="panel-body-map">
+          <div id="map" style="height:380px;">
+            <sebm-google-map  [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+              <sebm-google-map-marker [title]="condominio"  [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+            </sebm-google-map>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-3">
+      <!-- List starts -->
+      <ul class="today-datas">
+        <!-- List #1 -->
+        <li>
+          <!-- Graph -->
+          <div><span id="todayspark1" class="spark"><canvas width="77" height="30" style="display: inline-block; width: 77px; height: 30px; vertical-align: top;"></canvas></span></div>
+          <!-- Text -->
+          <div class="datas-text">11,500 visitors/day</div>
+        </li>
+        <li>
+          <div><span id="todayspark2" class="spark"><canvas width="101" height="30" style="display: inline-block; width: 101px; height: 30px; vertical-align: top;"></canvas></span></div>
+          <div class="datas-text">15,000 Pageviews</div>
+        </li>
+        <li>
+          <div><span id="todayspark3" class="spark"><canvas width="175" height="30" style="display: inline-block; width: 175px; height: 30px; vertical-align: top;"></canvas></span></div>
+          <div class="datas-text">30.55% Bounce Rate</div>
+        </li>
+        <li>
+          <div><span id="todayspark4" class="spark"><canvas width="186" height="30" style="display: inline-block; width: 186px; height: 30px; vertical-align: top;"></canvas></span></div>
+          <div class="datas-text">$16,00 Revenue/Day</div>
+        </li>
+        <li>
+          <div><span id="todayspark5" class="spark"><canvas width="250" height="30" style="display: inline-block; width: 250px; height: 30px; vertical-align: top;"></canvas></span></div>
+          <div class="datas-text">12,000000 visitors every Month</div>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+  <!-- Today status end -->
+
+
+
+  <div class="row">
+
+    <div class="col-lg-9 col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2><i class="fa fa-flag-o red"></i><strong>Registered Users</strong></h2>
+          <div class="panel-actions">
+            <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+            <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+            <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
+          </div>
+        </div>
+        <div class="panel-body">
+          <table class="table bootstrap-datatable countries">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Country</th>
+                <th>Users</th>
+                <th>Online</th>
+                <th>Performance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="img/Germany.png" style="height:18px; margin-top:-2px;"></td>
+                <td>Germany</td>
+                <td>2563</td>
+                <td>1025</td>
+                <td>
+                  <div class="progress thin">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 73%">
+                    </div>
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 27%">
+                    </div>
+                  </div>
+                  <span class="sr-only">73%</span>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/India.png" style="height:18px; margin-top:-2px;"></td>
+                <td>India</td>
+                <td>3652</td>
+                <td>2563</td>
+                <td>
+                  <div class="progress thin">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 57%">
+                    </div>
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 43%">
+                    </div>
+                  </div>
+                  <span class="sr-only">57%</span>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/Spain.png" style="height:18px; margin-top:-2px;"></td>
+                <td>Spain</td>
+                <td>562</td>
+                <td>452</td>
+                <td>
+                  <div class="progress thin">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 93%">
+                    </div>
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 7%">
+                    </div>
+                  </div>
+                  <span class="sr-only">93%</span>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/India.png" style="height:18px; margin-top:-2px;"></td>
+                <td>Russia</td>
+                <td>1258</td>
+                <td>958</td>
+                <td>
+                  <div class="progress thin">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 20%">
+                    </div>
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 80%">
+                    </div>
+                  </div>
+                  <span class="sr-only">20%</span>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/Spain.png" style="height:18px; margin-top:-2px;"></td>
+                <td>USA</td>
+                <td>4856</td>
+                <td>3621</td>
+                <td>
+                  <div class="progress thin">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 20%">
+                    </div>
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 80%">
+                    </div>
+                  </div>
+                  <span class="sr-only">20%</span>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/Germany.png" style="height:18px; margin-top:-2px;"></td>
+                <td>Brazil</td>
+                <td>265</td>
+                <td>102</td>
+                <td>
+                  <div class="progress thin">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 20%">
+                    </div>
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 80%">
+                    </div>
+                  </div>
+                  <span class="sr-only">20%</span>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/Germany.png" style="height:18px; margin-top:-2px;"></td>
+                <td>Coloumbia</td>
+                <td>265</td>
+                <td>102</td>
+                <td>
+                  <div class="progress thin">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 20%">
+                    </div>
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 80%">
+                    </div>
+                  </div>
+                  <span class="sr-only">20%</span>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/Germany.png" style="height:18px; margin-top:-2px;"></td>
+                <td>France</td>
+                <td>265</td>
+                <td>102</td>
+                <td>
+                  <div class="progress thin">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 20%">
+                    </div>
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 80%">
+                    </div>
+                  </div>
+                  <span class="sr-only">20%</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+    <!--/col-->
+    <div class="col-md-3">
+
+      <div class="social-box facebook">
+        <i class="fa fa-facebook"></i>
+        <ul>
+          <li>
+            <strong>256k</strong>
+            <span>friends</span>
+          </li>
+          <li>
+            <strong>359</strong>
+            <span>feeds</span>
+          </li>
+        </ul>
+      </div>
+      <!--/social-box-->
+    </div>
+    <div class="col-md-3">
+
+      <div class="social-box google-plus">
+        <i class="fa fa-google-plus"></i>
+        <ul>
+          <li>
+            <strong>962</strong>
+            <span>followers</span>
+          </li>
+          <li>
+            <strong>256</strong>
+            <span>circles</span>
+          </li>
+        </ul>
+      </div>
+      <!--/social-box-->
+
+    </div>
+    <!--/col-->
+    <div class="col-md-3">
+
+      <div class="social-box twitter">
+        <i class="fa fa-twitter"></i>
+        <ul>
+          <li>
+            <strong>1562k</strong>
+            <span>followers</span>
+          </li>
+          <li>
+            <strong>2562</strong>
+            <span>tweets</span>
+          </li>
+        </ul>
+      </div>
+      <!--/social-box-->
+
+    </div>
+    <!--/col-->
+
+  </div>
+
+
+
+  <!-- statics end -->
+
+
+
+
+  <!-- project team & activity start -->
+  <div class="row">
+    <div class="col-md-4 portlets">
+      <!-- Widget -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="pull-left">Message</div>
+          <div class="widget-icons pull-right">
+            <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+            <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="panel-body">
+          <!-- Widget content -->
+          <div class="padd sscroll">
+
+            <ul class="chats">
+
+              <!-- Chat by us. Use the class "by-me". -->
+              <li class="by-me">
+                <!-- Use the class "pull-left" in avatar -->
+                <div class="avatar pull-left">
+                  <img src="img/user.jpg" alt="">
+                </div>
+
+                <div class="chat-content">
+                  <!-- In meta area, first include "name" and then "time" -->
+                  <div class="chat-meta">John Smith <span class="pull-right">3 hours ago</span></div>
+                  Vivamus diam elit diam, consectetur dapibus adipiscing elit.
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+
+              <!-- Chat by other. Use the class "by-other". -->
+              <li class="by-other">
+                <!-- Use the class "pull-right" in avatar -->
+                <div class="avatar pull-right">
+                  <img src="img/user22.png" alt="">
+                </div>
+
+                <div class="chat-content">
+                  <!-- In the chat meta, first include "time" then "name" -->
+                  <div class="chat-meta">3 hours ago <span class="pull-right">Jenifer Smith</span></div>
+                  Vivamus diam elit diam, consectetur fconsectetur dapibus adipiscing elit.
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+
+              <li class="by-me">
+                <div class="avatar pull-left">
+                  <img src="img/user.jpg" alt="">
+                </div>
+
+                <div class="chat-content">
+                  <div class="chat-meta">John Smith <span class="pull-right">4 hours ago</span></div>
+                  Vivamus diam elit diam, consectetur fermentum sed dapibus eget, Vivamus consectetur dapibus adipiscing elit.
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+
+              <li class="by-other">
+                <!-- Use the class "pull-right" in avatar -->
+                <div class="avatar pull-right">
+                  <img src="img/user22.png" alt="">
+                </div>
+
+                <div class="chat-content">
+                  <!-- In the chat meta, first include "time" then "name" -->
+                  <div class="chat-meta">3 hours ago <span class="pull-right">Jenifer Smith</span></div>
+                  Vivamus diam elit diam, consectetur fermentum sed dapibus eget, Vivamus consectetur dapibus adipiscing elit.
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+          <!-- Widget footer -->
+          <div class="widget-foot">
+
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Type your message here...">
+              </div>
+              <button type="submit" class="btn btn-info">Send</button>
+            </form>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <!--Project Activity start-->
+      <section class="panel">
+        <div class="panel-body progress-panel">
+          <div class="row">
+            <div class="col-lg-8 task-progress pull-left">
+              <h1>To Do Everyday</h1>
+            </div>
+            <div class="col-lg-4">
+              <span class="profile-ava pull-right">
+                                        <img alt="" class="simple" src="img/avatar1_small.jpg">
+                                        Jenifer smith
+                                </span>
+            </div>
+          </div>
+        </div>
+        <table class="table table-hover personal-task">
+          <tbody>
+            <tr>
+              <td>Today</td>
+              <td>
+                web design
+              </td>
+              <td>
+                <span class="badge bg-important">Upload</span>
+              </td>
+              <td>
+                <span class="profile-ava">
+                                        <img alt="" class="simple" src="img/avatar1_small.jpg">
+                                    </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Yesterday</td>
+              <td>
+                Project Design Task
+              </td>
+              <td>
+                <span class="badge bg-success">Task</span>
+              </td>
+              <td>
+                <div id="work-progress2">
+                  <canvas width="26" height="22" style="display: inline-block; width: 26px; height: 22px; vertical-align: top;"></canvas>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>21-10-14</td>
+              <td>
+                Generate Invoice
+              </td>
+              <td>
+                <span class="badge bg-success">Task</span>
+              </td>
+              <td>
+                <div id="work-progress3">
+                  <canvas width="26" height="22" style="display: inline-block; width: 26px; height: 22px; vertical-align: top;"></canvas>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>22-10-14</td>
+              <td>
+                Project Testing
+              </td>
+              <td>
+                <span class="badge bg-primary">To-Do</span>
+              </td>
+              <td>
+                <span class="profile-ava">
+                                        <img alt="" class="simple" src="img/avatar1_small.jpg">
+                                      </span>
+              </td>
+            </tr>
+            <tr>
+              <td>24-10-14</td>
+              <td>
+                Project Release Date
+              </td>
+              <td>
+                <span class="badge bg-info">Milestone</span>
+              </td>
+              <td>
+                <div id="work-progress4">
+                  <canvas width="26" height="22" style="display: inline-block; width: 26px; height: 22px; vertical-align: top;"></canvas>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>28-10-14</td>
+              <td>
+                Project Release Date
+              </td>
+              <td>
+                <span class="badge bg-primary">To-Do</span>
+              </td>
+              <td>
+                <div id="work-progress5">
+                  <canvas width="26" height="22" style="display: inline-block; width: 26px; height: 22px; vertical-align: top;"></canvas>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Last week</td>
+              <td>
+                Project Release Date
+              </td>
+              <td>
+                <span class="badge bg-primary">To-Do</span>
+              </td>
+              <td>
+                <div id="work-progress1">
+                  <canvas width="47" height="20" style="display: inline-block; width: 47px; height: 20px; vertical-align: top;"></canvas>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>last month</td>
+              <td>
+                Project Release Date
+              </td>
+              <td>
+                <span class="badge bg-success">To-Do</span>
+              </td>
+              <td>
+                <span class="profile-ava">
+                                        <img alt="" class="simple" src="img/avatar1_small.jpg">
+                                      </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!--Project Activity end-->
+    </div>
+  </div><br><br>
+
+  <div class="row">
+    <div class="col-md-6 portlets">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2><strong>Calendar</strong></h2>
+          <div class="panel-actions">
+            <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+            <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+          </div>
+
+        </div><br><br><br>
+        <div class="panel-body">
+          <!-- Widget content -->
+
+          <!-- Below line produces calendar. I am using FullCalendar plugin. -->
+          <div id="calendar" class="fc">
+            <table class="fc-header" style="width:100%">
+              <tbody>
+                <tr>
+                  <td class="fc-header-left"><span class="fc-button fc-button-prev fc-state-default fc-corner-left"><span class="fc-button-inner"><span class="fc-button-content">&nbsp;◄&nbsp;</span>
+                    <span class="fc-button-effect"><span></span></span>
+                    </span>
+                    </span><span class="fc-button fc-button-next fc-state-default fc-corner-right"><span class="fc-button-inner"><span class="fc-button-content">&nbsp;►&nbsp;</span>
+                    <span class="fc-button-effect"><span></span></span>
+                    </span>
+                    </span><span class="fc-header-space"></span><span class="fc-button fc-button-today fc-state-default fc-corner-left fc-corner-right fc-state-disabled"><span class="fc-button-inner"><span class="fc-button-content">today</span>
+                    <span class="fc-button-effect"><span></span></span>
+                    </span>
+                    </span>
+                  </td>
+                  <td class="fc-header-center"><span class="fc-header-title"><h2>March 2017</h2></span></td>
+                  <td class="fc-header-right"><span class="fc-button fc-button-month fc-state-default fc-corner-left fc-state-active"><span class="fc-button-inner"><span class="fc-button-content">month</span>
+                    <span class="fc-button-effect"><span></span></span>
+                    </span>
+                    </span><span class="fc-button fc-button-basicWeek fc-state-default"><span class="fc-button-inner"><span class="fc-button-content">week</span>
+                    <span class="fc-button-effect"><span></span></span>
+                    </span>
+                    </span><span class="fc-button fc-button-basicDay fc-state-default fc-corner-right"><span class="fc-button-inner"><span class="fc-button-content">day</span>
+                    <span class="fc-button-effect"><span></span></span>
+                    </span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="fc-content" style="position: relative; min-height: 1px;">
+              <div class="fc-view fc-view-month fc-grid" style="position: relative;" unselectable="on">
+                <table class="fc-border-separate" style="width:100%" cellspacing="0">
+                  <thead>
+                    <tr class="fc-first fc-last">
+                      <th class="fc-sun fc-widget-header fc-first" style="width: 53px;">Sun</th>
+                      <th class="fc-mon fc-widget-header" style="width: 53px;">Mon</th>
+                      <th class="fc-tue fc-widget-header" style="width: 53px;">Tue</th>
+                      <th class="fc-wed fc-widget-header" style="width: 53px;">Wed</th>
+                      <th class="fc-thu fc-widget-header" style="width: 53px;">Thu</th>
+                      <th class="fc-fri fc-widget-header" style="width: 53px;">Fri</th>
+                      <th class="fc-sat fc-widget-header fc-last">Sat</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="fc-week0 fc-first">
+                      <td class="fc-sun fc-widget-content fc-day0 fc-first fc-other-month">
+                        <div style="min-height: 42px;">
+                          <div class="fc-day-number">26</div>
+                          <div class="fc-day-content">
+                            <div style="position: relative; height: 35px;">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-mon fc-widget-content fc-day1 fc-other-month">
+                        <div>
+                          <div class="fc-day-number">27</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-tue fc-widget-content fc-day2 fc-other-month">
+                        <div>
+                          <div class="fc-day-number">28</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-wed fc-widget-content fc-day3">
+                        <div>
+                          <div class="fc-day-number">1</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-thu fc-widget-content fc-day4">
+                        <div>
+                          <div class="fc-day-number">2</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-fri fc-widget-content fc-day5">
+                        <div>
+                          <div class="fc-day-number">3</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-sat fc-widget-content fc-day6 fc-last">
+                        <div>
+                          <div class="fc-day-number">4</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="fc-week1">
+                      <td class="fc-sun fc-widget-content fc-day7 fc-first">
+                        <div style="min-height: 41px;">
+                          <div class="fc-day-number">5</div>
+                          <div class="fc-day-content">
+                            <div style="position: relative; height: 0px;">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-mon fc-widget-content fc-day8">
+                        <div>
+                          <div class="fc-day-number">6</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-tue fc-widget-content fc-day9">
+                        <div>
+                          <div class="fc-day-number">7</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-wed fc-widget-content fc-day10">
+                        <div>
+                          <div class="fc-day-number">8</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-thu fc-widget-content fc-day11">
+                        <div>
+                          <div class="fc-day-number">9</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-fri fc-widget-content fc-day12">
+                        <div>
+                          <div class="fc-day-number">10</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-sat fc-widget-content fc-day13 fc-last">
+                        <div>
+                          <div class="fc-day-number">11</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="fc-week2">
+                      <td class="fc-sun fc-widget-content fc-day14 fc-first">
+                        <div style="min-height: 41px;">
+                          <div class="fc-day-number">12</div>
+                          <div class="fc-day-content">
+                            <div style="position: relative; height: 0px;">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-mon fc-widget-content fc-day15">
+                        <div>
+                          <div class="fc-day-number">13</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-tue fc-widget-content fc-day16">
+                        <div>
+                          <div class="fc-day-number">14</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-wed fc-widget-content fc-day17">
+                        <div>
+                          <div class="fc-day-number">15</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-thu fc-widget-content fc-day18">
+                        <div>
+                          <div class="fc-day-number">16</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-fri fc-widget-content fc-day19">
+                        <div>
+                          <div class="fc-day-number">17</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-sat fc-widget-content fc-day20 fc-last">
+                        <div>
+                          <div class="fc-day-number">18</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="fc-week3">
+                      <td class="fc-sun fc-widget-content fc-day21 fc-first">
+                        <div style="min-height: 41px;">
+                          <div class="fc-day-number">19</div>
+                          <div class="fc-day-content">
+                            <div style="position: relative; height: 35px;">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-mon fc-widget-content fc-day22">
+                        <div>
+                          <div class="fc-day-number">20</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-tue fc-widget-content fc-day23">
+                        <div>
+                          <div class="fc-day-number">21</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-wed fc-widget-content fc-day24">
+                        <div>
+                          <div class="fc-day-number">22</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-thu fc-widget-content fc-day25">
+                        <div>
+                          <div class="fc-day-number">23</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-fri fc-widget-content fc-day26">
+                        <div>
+                          <div class="fc-day-number">24</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-sat fc-widget-content fc-day27 fc-last">
+                        <div>
+                          <div class="fc-day-number">25</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="fc-week4">
+                      <td class="fc-sun fc-widget-content fc-day28 fc-first">
+                        <div style="min-height: 41px;">
+                          <div class="fc-day-number">26</div>
+                          <div class="fc-day-content">
+                            <div style="position: relative; height: 54px;">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-mon fc-widget-content fc-day29">
+                        <div>
+                          <div class="fc-day-number">27</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-tue fc-widget-content fc-day30">
+                        <div>
+                          <div class="fc-day-number">28</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-wed fc-widget-content fc-day31">
+                        <div>
+                          <div class="fc-day-number">29</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-thu fc-widget-content fc-day32 fc-state-highlight fc-today">
+                        <div>
+                          <div class="fc-day-number">30</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-fri fc-widget-content fc-day33">
+                        <div>
+                          <div class="fc-day-number">31</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-sat fc-widget-content fc-day34 fc-last fc-other-month">
+                        <div>
+                          <div class="fc-day-number">1</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="fc-week5 fc-last">
+                      <td class="fc-sun fc-widget-content fc-day35 fc-first fc-other-month">
+                        <div style="min-height: 45px;">
+                          <div class="fc-day-number">2</div>
+                          <div class="fc-day-content">
+                            <div style="position: relative; height: 35px;">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-mon fc-widget-content fc-day36 fc-other-month">
+                        <div>
+                          <div class="fc-day-number">3</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-tue fc-widget-content fc-day37 fc-other-month">
+                        <div>
+                          <div class="fc-day-number">4</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-wed fc-widget-content fc-day38 fc-other-month">
+                        <div>
+                          <div class="fc-day-number">5</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-thu fc-widget-content fc-day39 fc-other-month">
+                        <div>
+                          <div class="fc-day-number">6</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-fri fc-widget-content fc-day40 fc-other-month">
+                        <div>
+                          <div class="fc-day-number">7</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fc-sat fc-widget-content fc-day41 fc-last fc-other-month">
+                        <div>
+                          <div class="fc-day-number">8</div>
+                          <div class="fc-day-content">
+                            <div style="position:relative">&nbsp;</div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div style="position:absolute;z-index:8;top:0;left:0">
+                  <div class="fc-event fc-event-skin fc-event-hori fc-event-draggable fc-corner-left fc-corner-right" style="position: absolute; z-index: 8; left: 162px; width: 46px; top: 44px;">
+                    <div class="fc-event-inner fc-event-skin"><span class="fc-event-title">All Day Event</span></div>
+                    <div class="ui-resizable-handle ui-resizable-e">&nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <div class="fc-event fc-event-skin fc-event-hori fc-event-draggable fc-corner-left" style="position: absolute; z-index: 8; left: 321px; width: 54px; top: 191px;">
+                    <div class="fc-event-inner fc-event-skin"><span class="fc-event-title">Long Event</span></div>
+                  </div>
+                  <div class="fc-event fc-event-skin fc-event-hori fc-event-draggable fc-corner-right" style="position: absolute; z-index: 8; left: 0px; width: 156px; top: 250px;">
+                    <div class="fc-event-inner fc-event-skin"><span class="fc-event-title">Long Event</span></div>
+                    <div class="ui-resizable-handle ui-resizable-e">&nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <div class="fc-event fc-event-skin fc-event-hori fc-event-draggable fc-corner-left fc-corner-right" style="position: absolute; z-index: 8; left: 215px; width: 46px; top: 250px;">
+                    <div class="fc-event-inner fc-event-skin"><span class="fc-event-time">10:30a</span><span class="fc-event-title">Meeting</span></div>
+                    <div class="ui-resizable-handle ui-resizable-e">&nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <div class="fc-event fc-event-skin fc-event-hori fc-event-draggable fc-corner-left fc-corner-right" style="position: absolute; z-index: 8; left: 268px; width: 46px; top: 250px;">
+                    <div class="fc-event-inner fc-event-skin"><span class="fc-event-time">7p</span><span class="fc-event-title">Birthday Party</span></div>
+                    <div class="ui-resizable-handle ui-resizable-e">&nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <a href="http://google.com/" class="fc-event fc-event-skin fc-event-hori fc-event-draggable fc-corner-left fc-corner-right"
+                    style="position: absolute; z-index: 8; left: 109px; width: 99px; top: 269px;">
+                    <div class="fc-event-inner fc-event-skin"><span class="fc-event-title">Click for Google</span></div>
+                    <div class="ui-resizable-handle ui-resizable-e">&nbsp;&nbsp;&nbsp;</div>
+                  </a>
+                  <div class="fc-event fc-event-skin fc-event-hori fc-event-draggable fc-corner-left fc-corner-right" style="position: absolute; z-index: 8; left: 215px; width: 46px; top: 269px;">
+                    <div class="fc-event-inner fc-event-skin"><span class="fc-event-time">12p</span><span class="fc-event-title">Lunch</span></div>
+                    <div class="ui-resizable-handle ui-resizable-e">&nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <div class="fc-event fc-event-skin fc-event-hori fc-event-draggable fc-corner-left fc-corner-right" style="position: absolute; z-index: 8; left: 56px; width: 46px; top: 269px;">
+                    <div class="fc-event-inner fc-event-skin"><span class="fc-event-time">4p</span><span class="fc-event-title">Repeating Event</span></div>
+                    <div class="ui-resizable-handle ui-resizable-e">&nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <div class="fc-event fc-event-skin fc-event-hori fc-event-draggable fc-corner-left fc-corner-right" style="position: absolute; z-index: 8; left: 56px; width: 46px; top: 328px;">
+                    <div class="fc-event-inner fc-event-skin"><span class="fc-event-time">4p</span><span class="fc-event-title">Repeating Event</span></div>
+                    <div class="ui-resizable-handle ui-resizable-e">&nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-6 portlets">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="pull-left">Quick Post</div>
+          <div class="widget-icons pull-right">
+            <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+            <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="panel-body">
+          <div class="padd">
+
+            <div class="form quick-post">
+              <!-- Edit profile form (not working)-->
+              <form class="form-horizontal">
+                <!-- Title -->
+                <div class="form-group">
+                  <label class="control-label col-lg-2" for="title">Title</label>
+                  <div class="col-lg-10">
+                    <input type="text" class="form-control" id="title">
+                  </div>
+                </div>
+                <!-- Content -->
+                <div class="form-group">
+                  <label class="control-label col-lg-2" for="content">Content</label>
+                  <div class="col-lg-10">
+                    <textarea class="form-control" id="content"></textarea>
+                  </div>
+                </div>
+                <!-- Cateogry -->
+                <div class="form-group">
+                  <label class="control-label col-lg-2">Category</label>
+                  <div class="col-lg-10">
+                    <select class="form-control">
+                                                  <option value="">- Choose Cateogry -</option>
+                                                  <option value="1">General</option>
+                                                  <option value="2">News</option>
+                                                  <option value="3">Media</option>
+                                                  <option value="4">Funny</option>
+                                                </select>
+                  </div>
+                </div>
+                <!-- Tags -->
+                <div class="form-group">
+                  <label class="control-label col-lg-2" for="tags">Tags</label>
+                  <div class="col-lg-10">
+                    <input type="text" class="form-control" id="tags">
+                  </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="form-group">
+                  <!-- Buttons -->
+                  <div class="col-lg-offset-2 col-lg-9">
+                    <button type="submit" class="btn btn-primary">Publish</button>
+                    <button type="submit" class="btn btn-danger">Save Draft</button>
+                    <button type="reset" class="btn btn-default">Reset</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+
+          </div>
+          <div class="widget-foot">
+            <!-- Footer goes here -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- project team & activity end -->
+
+</section>
