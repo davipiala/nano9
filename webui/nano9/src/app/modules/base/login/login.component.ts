@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { User, Error } from '../model/model';
 import { Form, FormGroup, FormBuilder, Validators, ReactiveFormsModule, FormControl } from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'b-app-login',
@@ -12,8 +14,7 @@ export class LoginComponent implements OnInit {
   public user: User;
   public error: Error;
   public formLogin: FormGroup;
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.user = new User();
@@ -25,8 +26,15 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    this.error.hasError = true;
-    this.error.errTitle = "Falha";
-    this.error.errMsg = "Usuário/Senha inválidos!";
+    if (this.user.username == "davi") {
+      localStorage.setItem('currentUser', 'davi');
+      this.router.navigate(['home']);
+    }
+    else {
+      this.error.hasError = true;
+      this.error.errTitle = "Falha";
+      this.error.errMsg = "Usuário/Senha inválidos!";
+    }
+
   }
 }

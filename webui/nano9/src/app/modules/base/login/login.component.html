@@ -1,15 +1,15 @@
 <div class="login-img3-body">
   <div class="container">
-    <form class="login-form" [formGroup]="formLogin">
+    <form class="login-form" [formGroup]="formLogin" (ngSubmit)="login()" novalidate>
       <div class="login-wrap">
         <p class="login-img"><i class="icon_lock_alt"></i></p>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-          <input type="text" class="form-control" placeholder="Usuário" autofocus formControlName="username">
+          <input type="text" class="form-control" placeholder="Usuário" autofocus formControlName="username" 	[(ngModel)]="user.username">
         </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-          <input type="password" class="form-control" placeholder="Senha" formControlName="password">
+          <input type="password" class="form-control" placeholder="Senha" formControlName="password" 	[(ngModel)]="user.password">
         </div>
         <label class="checkbox">
                 <input type="checkbox" value="remember-me"> Lembrar-me

@@ -1,7 +1,5 @@
 Reunião 1
 
-BrainStorm.
-
 Optamos por olhar soluções de mercado, a intenção foi levantar posssíveis necessidades atuais dos condomímios:
 
 
@@ -12,8 +10,26 @@ Observamos os seguintes sites:
 colaboradores, forum, prestadores de serviço, documentos, classificados, portaria, medidor de agua e gas.
 incondevsin -> permite a renegociação, caracteristica muito interessante, controle de fornecedores.
 
+--Todas as plataformas são colaborativas e agem como rede social.
 
+Entre as funcionalidades iniciamente pensadas estão:
+  Carga Condomínio. (Processo inicial via wizard)
+ok  Consumo (Agua, Gás, Eletricidade)
+ok  Gestão Chamado (Mediação, Abertura, Acompanhamento) com foco em manutanção
+ok  Solicitações (Reserva para Mudança, Reserva de espaços como churrasqueiras, salas)
+  Gestão Estacionamento (Sorteio Vagas rotativas, Controle de Acesso, Cadastro de Veiculos)
+  Suporte reunião (Ata, enquete, pauta)
+ok  Cadastro(gestão) + integração social
+  Perfis Moderador, Administrador, Usuario (Podendo ser alternavel as responsabilidades)
+  Usuário serão convidados para a rede através de convite por e-mail.
+ok  Gestão Tesouraria (taxas, renegociação, caixa)
+ok  Mural (Avisos + PUSH)
+ok  Portaria (Acesso, Liberações, Recebimentos)
+ok  Quadro Funcionarios
 Escolhemos o nome do projeto como sendo nano9
+
+Foi avaliado e decidido por tecnologias single-page-app por conta da flexibilidade para tratar com html 5, portabilidade e de features que a permitem escalar de uma forma
+mais confiável e consumir menos banda para aparelhos portáteis.
 
 Avaliando os templates bootstrap
 
@@ -23,3 +39,53 @@ https://bootstrapmade.com/demo/Techie/
 
 https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/?download=niceadmin.zip
 (entre todos os temas escolhemos o tema acima, baseado em html 5 com bootstrap 3)
+
+Foi definido estruturar uma micro rede social... Qual pode funcionar como um SAAS, onde cada condíminio tem sua própria micro-rede com seus relacionamentos e privacidade.
+
+Foi escolhido realizar a implementação com Angular 4 por conta do seu desempenho e popularidade entre os desenvolvedores, quantidade de material disponível e suporte da counidade.
+
+A micro-rede social de condomínios irá se pautar em dois perfis inicias sendo eles:
+
+administrador(sindico)
+moderador(sub-síndico, conselho)
+usuario(moradores)
+
+Os perfis irão influenciar na visibilidade sobre a rede.
+
+Optou-se por dar a possibilidade de flexbilizar entre uma visão residencial e corporativa.
+
+Optou-se por utilizar o GITHUB como VCS da iniciativa.
+
+Para facilitar o desenvolvimento do futuro backend serão documentadas as API's do backend em formato Json Schema + YAML através do Swagger-editor.
+
+Optou-se por conta da facilidade em manobrar em termos de esforço e custo pela metodologia MVP (Minimum Viable Product), onde iremos trabalhar com sprint's semanais com entregáveis
+para avaliar a evolução do sistema.
+A gestão e processo de desenvolvimento será pautado em um SCRUM, mas de forma reduzida por conta da equipe.
+
+
+A primeira entrega preve:
+Rodapé, header, login e home
+
+A segunda entrega preve:
+Mural + PUSH + Cadastro Base + Perfis + Login Social(facebook) + Suporte Reunião + Convite
+
+A terceira entrega preve:
+Sorteio + Gestão Estacionamento + API's
+
+A quarta entrega preve:
+Solicitações  + Consumo
+
+A quinta entrega preve:
+Gestão Chamado, Portaria
+
+A sexta entrega preve:
+Carga Condominio
+
+A sétima entrega preve:
+Carga Condominio + API's
+
+A Oitava entrega preve:
+Gestão Tesouraria
+
+A nona entrega preve:
+Quadro de funcionários
