@@ -10,6 +10,9 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
 import { AuthGuard } from './modules/base/auth/auth.guard';
 import { routing } from './modules/base/route/app.routing';
 import { HeaderComponent } from './modules/base/header/header.component';
+import { LoginService } from './modules/base/service/login.service';
+import { EdificioComponent } from './modules/cadastro/edificio/edificio.component';
+import { EstacionamentoComponent } from './modules/cadastro/estacionamento/estacionamento.component'
 
 
 @NgModule({
@@ -17,7 +20,9 @@ import { HeaderComponent } from './modules/base/header/header.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    EdificioComponent,
+    EstacionamentoComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,7 @@ import { HeaderComponent } from './modules/base/header/header.component';
     ReactiveFormsModule,
    AgmCoreModule.forRoot({ apiKey: 'AIzaSyB1cnH31mksVvJJGm04eu9NrfidKr_Ava8'})
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard,LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
