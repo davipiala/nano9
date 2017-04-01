@@ -26,7 +26,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    if (this.user.username == "davi") {
+    if (this.user.username == "davi" &&
+    this.user.password == "senha") {          
       localStorage.setItem('currentUser', 'davi');
       this.router.navigate(['home']);
     }
