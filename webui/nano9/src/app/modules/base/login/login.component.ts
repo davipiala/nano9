@@ -3,7 +3,7 @@ import { User, Error } from '../model/model';
 import { Form, FormGroup, FormBuilder, Validators, ReactiveFormsModule, FormControl } from '@angular/forms';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { LoginService } from '../service/login.service'
+//import { LoginService } from '../service/login.service'
 
 @Component({
   selector: 'b-app-login',
@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   public user: User;
   public error: Error;
   public formLogin: FormGroup;
-  constructor(private router: Router, public loginService: LoginService) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.user = new User();
@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    /*
     if (this.loginService.login(this.user)) {          
     
       this.router.navigate(['home']);
@@ -35,7 +36,7 @@ export class LoginComponent implements OnInit {
       this.error.hasError = true;
       this.error.errTitle = "Falha";
       this.error.errMsg = "Usuário/Senha inválidos!";
-    }
+    }*/
   }
  
 }

@@ -22,7 +22,9 @@ export class LoginService {
     return false;
   }
   logout(){
+      alert("teste");
       localStorage.removeItem('currentUser');
+      alert("teste");
   }
 
 }
