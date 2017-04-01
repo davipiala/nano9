@@ -12,7 +12,10 @@ import { routing } from './modules/base/route/app.routing';
 import { HeaderComponent } from './modules/base/header/header.component';
 import { LoginService } from './modules/base/service/login.service';
 import { EdificioComponent } from './modules/cadastro/edificio/edificio.component';
-import { EstacionamentoComponent } from './modules/cadastro/estacionamento/estacionamento.component'
+import { EstacionamentoComponent } from './modules/cadastro/estacionamento/estacionamento.component';
+import { TimelineComponent } from './modules/timeline/timeline/timeline.component';
+import { HistoryComponent } from './modules/timeline/history/history.component';
+import { PostComponent } from './modules/timeline/post/post.component'
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { EstacionamentoComponent } from './modules/cadastro/estacionamento/estac
     HomeComponent,
     HeaderComponent,
     EdificioComponent,
-    EstacionamentoComponent
+    EstacionamentoComponent,
+    TimelineComponent,
+    HistoryComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
