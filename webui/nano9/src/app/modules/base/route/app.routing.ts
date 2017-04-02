@@ -6,6 +6,8 @@ import { HomeComponent } from '../home/home.component';
 import { LoginComponent } from '../login/login.component';
 import { HistoryComponent } from '../../../modules/timeline/history/history.component';
 import { AuthGuard } from '../auth/auth.guard';
+import { EdificioComponent } from '../../cadastro/edificio/edificio.component';
+
 
 
 
@@ -15,6 +17,8 @@ const appRoutes: Routes = [
     { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
     { path: 'login', component: LoginComponent },        
     { path: 'timeline', component: HistoryComponent },
+    { path: 'edificio', component: EdificioComponent },
+
     { path: '**', redirectTo: 'not-found' }
 ];
 
