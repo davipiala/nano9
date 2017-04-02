@@ -1,0 +1,11 @@
+Reunião 2
+
+Avaliamos soluções de timeline e escolhemos a seguinte abordagem:
+
+http://bootsnipp.com/snippets/z4bEn
+
+Recuperamos o template ABNT do PIM 1 para aproveitar no PIM 3.
+
+Foram ajustadas funcionalidades:
+
+Preencher com dados!!
