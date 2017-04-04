@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './modules/base/login/login.component';
@@ -34,6 +35,7 @@ import { PostComponent } from './modules/timeline/post/post.component'
     HttpModule,
     routing,
     ReactiveFormsModule,
+    Ng2SmartTableModule,
    AgmCoreModule.forRoot({ apiKey: 'AIzaSyB1cnH31mksVvJJGm04eu9NrfidKr_Ava8'})
   ],
   providers: [AuthGuard,LoginService],
