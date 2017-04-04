@@ -9,3 +9,14 @@ Recuperamos o template ABNT do PIM 1 para aproveitar no PIM 3.
 Foram ajustadas funcionalidades:
 
 Preencher com dados!!
+
+Escolhi que vou usar este template para me ajudar a representar o prédio
+
+http://pt.stackoverflow.com/questions/51097/construir-um-pr%C3%A9dio-3d-com-html-css-e-js
+
+apoio
+
+https://www.codecademy.com/en/courses/web-beginner-en-SWM11/0/3
+
+Carregando imagens
+https://www.w3schools.com/graphics/canvas_images.asp
