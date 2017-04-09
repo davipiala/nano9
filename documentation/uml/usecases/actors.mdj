@@ -19029,6 +19029,16 @@
 					"isAbstract": false,
 					"isFinalSpecialization": false,
 					"isLeaf": false
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "AAAAAAFbU9QC9MmloxA=",
+					"_parent": {
+						"$ref": "AAAAAAFbUzsOy6rShq8="
+					},
+					"name": "Liberar Convidado",
+					"visible": true,
+					"defaultDiagram": false
 				}
 			],
 			"visibility": "public"
