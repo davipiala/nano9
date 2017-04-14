@@ -15,7 +15,8 @@ import { LoginService } from './modules/base/service/login.service';
 import { EdificioComponent } from './modules/cadastro/edificio/edificio.component';
 import { EstacionamentoComponent } from './modules/cadastro/estacionamento/estacionamento.component';
 import { HistoryComponent } from './modules/timeline/history/history.component';
-import { PostComponent } from './modules/timeline/post/post.component'
+import { PostComponent } from './modules/timeline/post/post.component';
+import { FuncionariosComponent } from './modules/cadastro/funcionarios/funcionarios.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PostComponent } from './modules/timeline/post/post.component'
     EdificioComponent,
     EstacionamentoComponent,
     HistoryComponent,
-    PostComponent
+    PostComponent,
+    FuncionariosComponent
   ],
   imports: [
     BrowserModule,
