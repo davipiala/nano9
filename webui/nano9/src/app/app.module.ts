@@ -17,6 +17,8 @@ import { EstacionamentoComponent } from './modules/cadastro/estacionamento/estac
 import { HistoryComponent } from './modules/timeline/history/history.component';
 import { PostComponent } from './modules/timeline/post/post.component';
 import { FuncionariosComponent } from './modules/cadastro/funcionarios/funcionarios.component';
+import { MoradoresComponent } from './modules/cadastro/moradores/moradores.component';
+import { MapsComponent } from './modules/base/maps/maps.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { FuncionariosComponent } from './modules/cadastro/funcionarios/funcionar
     EstacionamentoComponent,
     HistoryComponent,
     PostComponent,
-    FuncionariosComponent
+    FuncionariosComponent,
+    MoradoresComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule,

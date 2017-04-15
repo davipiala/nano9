@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {HistoryComponent} from '../../timeline/history/history.component';
 @Component({
   selector: 'b-app-home',
   templateUrl: './home.component.html',

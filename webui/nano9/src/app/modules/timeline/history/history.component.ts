@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from "../../base/header/header.component"
+
 @Component({
-  selector: 'app-history',
+  selector: 'b-app-timeline',
   templateUrl: './history.component.html',
   styleUrls: ['./history.component.css']
 })

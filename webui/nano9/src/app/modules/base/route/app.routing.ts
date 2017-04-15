@@ -8,6 +8,7 @@ import { HistoryComponent } from '../../../modules/timeline/history/history.comp
 import { AuthGuard } from '../auth/auth.guard';
 import { EdificioComponent } from '../../cadastro/edificio/edificio.component';
 import { FuncionariosComponent } from '../../cadastro/funcionarios/funcionarios.component';
+import { MoradoresComponent } from '../../cadastro/moradores/moradores.component';
 
 
 
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
     { path: 'timeline', component: HistoryComponent },
     { path: 'edificio', component: EdificioComponent },
     { path: 'funcionarios', component: FuncionariosComponent },
+    { path: 'moradores', component: MoradoresComponent },
 
     { path: '**', redirectTo: 'not-found' }
 ];

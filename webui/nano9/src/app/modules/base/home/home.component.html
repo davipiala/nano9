@@ -1,5 +1,5 @@
-
-<b-app-header></b-app-header>
+<b-app-header>
+</b-app-header>
 <section id="main-content" style="margin-left: 180px;">
   <section class="wrapper">
     <div class="row">
@@ -46,7 +46,7 @@
 
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h2><i class="fa fa-map-marker red"></i><strong>Localização</strong></h2>
+            <h2><i class="fa fa-clock-o red"></i><strong>Timeline</strong></h2>
             <div class="panel-actions">
               <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
               <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
@@ -54,13 +54,8 @@
             </div>
           </div>
           <div class="panel-body-map">
-            <div id="map" style="height:380px;">
-              <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-                <sebm-google-map-marker [title]="condominio" [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
-              </sebm-google-map>
-            </div>
+            <b-app-timeline></b-app-timeline>
           </div>
-
         </div>
       </div>
       <div class="col-md-3 portlets">
