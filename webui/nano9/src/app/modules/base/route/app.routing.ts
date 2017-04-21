@@ -9,8 +9,8 @@ import { AuthGuard } from '../auth/auth.guard';
 import { EdificioComponent } from '../../cadastro/edificio/edificio.component';
 import { FuncionariosComponent } from '../../cadastro/funcionarios/funcionarios.component';
 import { MoradoresComponent } from '../../cadastro/moradores/moradores.component';
-
-
+import { ManutencoesComponent} from '../../solicitacao/manutencoes/manutencoes.component'
+import { ReservasComponent} from '../../solicitacao/reservas/reservas.component'
 
 
 const appRoutes: Routes = [
@@ -22,6 +22,9 @@ const appRoutes: Routes = [
     { path: 'edificio', component: EdificioComponent },
     { path: 'funcionarios', component: FuncionariosComponent },
     { path: 'moradores', component: MoradoresComponent },
+    { path: 'reservas', component: ReservasComponent },
+    { path: 'manutencoes', component: ManutencoesComponent },
+
 
     { path: '**', redirectTo: 'not-found' }
 ];

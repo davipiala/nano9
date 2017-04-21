@@ -19,6 +19,8 @@ import { PostComponent } from './modules/timeline/post/post.component';
 import { FuncionariosComponent } from './modules/cadastro/funcionarios/funcionarios.component';
 import { MoradoresComponent } from './modules/cadastro/moradores/moradores.component';
 import { MapsComponent } from './modules/base/maps/maps.component';
+import { ReservasComponent } from './modules/solicitacao/reservas/reservas.component';
+import { ManutencoesComponent } from './modules/solicitacao/manutencoes/manutencoes.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { MapsComponent } from './modules/base/maps/maps.component';
     PostComponent,
     FuncionariosComponent,
     MoradoresComponent,
-    MapsComponent
+    MapsComponent,
+    ReservasComponent,
+    ManutencoesComponent
   ],
   imports: [
     BrowserModule,
