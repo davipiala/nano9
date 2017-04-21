@@ -1,0 +1,32 @@
+<div class="login-img3-body">
+  <div class="container">
+    <form class="login-form" [formGroup]="formLogin" (ngSubmit)="login()" novalidate>
+      <div class="login-wrap">
+        <p class="login-img"><i class="icon_profile"></i></p>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="icon_profile"></i></span>
+          <input type="text" class="form-control" placeholder="Usuário" autofocus formControlName="username" [(ngModel)]="user.username">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon"><i class="icon_mail"></i></span>
+          <input type="text" class="form-control" placeholder="e-mail" autofocus formControlName="username" [(ngModel)]="user.username">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+          <input type="password" class="form-control" placeholder="Senha" formControlName="password" [(ngModel)]="user.password">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+          <input type="password" class="form-control" placeholder="Confirmar Senha" formControlName="password" [(ngModel)]="user.password">
+        </div>
+        <button class="btn btn-info btn-lg btn-block" type="submit">Regitrar-se</button>
+        <br>
+        <div *ngIf="error.hasError" class="alert alert-danger">
+          <strong>Falha!</strong> Usuário/Senha inválidos!
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
