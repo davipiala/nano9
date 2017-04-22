@@ -21,6 +21,8 @@ import { MoradoresComponent } from './modules/cadastro/moradores/moradores.compo
 import { MapsComponent } from './modules/base/maps/maps.component';
 import { ReservasComponent } from './modules/solicitacao/reservas/reservas.component';
 import { ManutencoesComponent } from './modules/solicitacao/manutencoes/manutencoes.component';
+import { UsuarioComponent } from './modules/cadastro/usuario/usuario.component';
+import { RedeComponent } from './modules/cadastro/rede/rede.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { ManutencoesComponent } from './modules/solicitacao/manutencoes/manutenc
     MoradoresComponent,
     MapsComponent,
     ReservasComponent,
-    ManutencoesComponent
+    ManutencoesComponent,
+    UsuarioComponent,
+    RedeComponent
   ],
   imports: [
     BrowserModule,

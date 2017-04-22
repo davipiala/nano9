@@ -27,9 +27,9 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    
-    if (this.loginService.login(this.user)) {          
-    
+
+    if (this.loginService.login(this.user)) {
+
       this.router.navigate(['home']);
     }
     else {
@@ -38,5 +38,8 @@ export class LoginComponent implements OnInit {
       this.error.errMsg = "Usuário/Senha inválidos!";
     }
   }
- 
+  cadastrar() {
+    this.router.navigate(['usuarios']);
+  }
+
 }
