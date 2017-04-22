@@ -13,6 +13,9 @@ import { ManutencoesComponent } from '../../solicitacao/manutencoes/manutencoes.
 import { ReservasComponent } from '../../solicitacao/reservas/reservas.component'
 import { UsuarioComponent } from '../../cadastro/usuario/usuario.component'
 import { RedeComponent } from '../../cadastro/rede/rede.component'
+import { RedeWorkflow1Component } from '../../cadastro/rede/rede-workflow-1/rede-workflow-1.component'
+import { RedeWorkflow2Component } from '../../cadastro/rede/rede-workflow-2/rede-workflow-2.component'
+import { RedeWorkflow3Component } from '../../cadastro/rede/rede-workflow-3/rede-workflow-3.component'
 
 
 const appRoutes: Routes = [
@@ -28,6 +31,9 @@ const appRoutes: Routes = [
     { path: 'manutencoes', component: ManutencoesComponent },
     { path: 'usuarios', component: UsuarioComponent },
     { path: 'redes', component: RedeComponent },
+    { path: 'redesWorkflow1', component: RedeWorkflow1Component },
+    { path: 'redesWorkflow2', component: RedeWorkflow2Component },
+    { path: 'redesWorkflow3', component: RedeWorkflow3Component },
 
     { path: '**', redirectTo: 'not-found' }
 ];

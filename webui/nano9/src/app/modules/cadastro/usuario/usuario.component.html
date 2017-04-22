@@ -1,6 +1,6 @@
 <div class="login-img3-body">
   <div class="container">
-    <form class="login-form" [formGroup]="formLogin" (ngSubmit)="login()" novalidate>
+    <form class="login-form" [formGroup]="formRede"  novalidate>
       <div class="login-wrap">
         <p class="login-img"><i class="icon_profile"></i></p>
         <div class="input-group">
@@ -10,7 +10,7 @@
 
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_mail"></i></span>
-          <input type="text" class="form-control" placeholder="e-mail" autofocus formControlName="username" [(ngModel)]="user.username">
+          <input type="text" class="form-control" placeholder="e-mail" autofocus formControlName="email" [(ngModel)]="user.email">
         </div>
 
         <div class="input-group">
@@ -19,10 +19,9 @@
         </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-          <input type="password" class="form-control" placeholder="Confirmar Senha" formControlName="password" [(ngModel)]="user.password">
+          <input type="password" class="form-control" placeholder="Confirmar Senha">
         </div>
 
-         
         <button class="btn btn-info btn-lg btn-block" (click)="cadastrarRede()">Regitrar-se</button>
         <br>
         <div *ngIf="error.hasError" class="alert alert-danger">

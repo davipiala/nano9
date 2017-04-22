@@ -23,6 +23,9 @@ import { ReservasComponent } from './modules/solicitacao/reservas/reservas.compo
 import { ManutencoesComponent } from './modules/solicitacao/manutencoes/manutencoes.component';
 import { UsuarioComponent } from './modules/cadastro/usuario/usuario.component';
 import { RedeComponent } from './modules/cadastro/rede/rede.component';
+import { RedeWorkflow1Component } from './modules/cadastro/rede/rede-workflow-1/rede-workflow-1.component';
+import { RedeWorkflow2Component } from './modules/cadastro/rede/rede-workflow-2/rede-workflow-2.component';
+import { RedeWorkflow3Component } from './modules/cadastro/rede/rede-workflow-3/rede-workflow-3.component';
 
 
 @NgModule({
@@ -41,7 +44,10 @@ import { RedeComponent } from './modules/cadastro/rede/rede.component';
     ReservasComponent,
     ManutencoesComponent,
     UsuarioComponent,
-    RedeComponent
+    RedeComponent,
+    RedeWorkflow1Component,
+    RedeWorkflow2Component,
+    RedeWorkflow3Component
   ],
   imports: [
     BrowserModule,
