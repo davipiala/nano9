@@ -17,8 +17,8 @@ import { RedeWorkflow1Component } from '../../cadastro/rede/rede-workflow-1/rede
 import { RedeWorkflow2Component } from '../../cadastro/rede/rede-workflow-2/rede-workflow-2.component'
 import { RedeWorkflow3Component } from '../../cadastro/rede/rede-workflow-3/rede-workflow-3.component'
 import { VisitantesComponent } from '../../portaria/visitantes/visitantes.component'
-
-
+import { PrestadoresComponent } from '../../portaria/prestadores/prestadores.component'
+import { EntregasComponent } from '../../portaria/entregas/entregas.component'
 
 
 const appRoutes: Routes = [
@@ -38,7 +38,8 @@ const appRoutes: Routes = [
     { path: 'redesWorkflow2', component: RedeWorkflow2Component },
     { path: 'redesWorkflow3', component: RedeWorkflow3Component },
     { path: 'visitantes', component: VisitantesComponent },
-
+    { path: 'prestadores', component: PrestadoresComponent },
+    { path: 'entregas', component: EntregasComponent },
 
     { path: '**', redirectTo: 'not-found' }
 ];

@@ -28,6 +28,8 @@ import { RedeWorkflow2Component } from './modules/cadastro/rede/rede-workflow-2/
 import { RedeWorkflow3Component } from './modules/cadastro/rede/rede-workflow-3/rede-workflow-3.component';
 import { ChatComponent } from './modules/base/chat/chat.component';
 import { VisitantesComponent } from './modules/portaria/visitantes/visitantes.component';
+import { PrestadoresComponent } from './modules/portaria/prestadores/prestadores.component';
+import { EntregasComponent } from './modules/portaria/entregas/entregas.component';
 
 
 @NgModule({
@@ -51,7 +53,9 @@ import { VisitantesComponent } from './modules/portaria/visitantes/visitantes.co
     RedeWorkflow2Component,
     RedeWorkflow3Component,
     ChatComponent,
-    VisitantesComponent
+    VisitantesComponent,
+    PrestadoresComponent,
+    EntregasComponent
   ],
   imports: [
     BrowserModule,
