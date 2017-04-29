@@ -26,6 +26,7 @@ import { RedeComponent } from './modules/cadastro/rede/rede.component';
 import { RedeWorkflow1Component } from './modules/cadastro/rede/rede-workflow-1/rede-workflow-1.component';
 import { RedeWorkflow2Component } from './modules/cadastro/rede/rede-workflow-2/rede-workflow-2.component';
 import { RedeWorkflow3Component } from './modules/cadastro/rede/rede-workflow-3/rede-workflow-3.component';
+import { ChatComponent } from './modules/base/chat/chat.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { RedeWorkflow3Component } from './modules/cadastro/rede/rede-workflow-3/
     RedeComponent,
     RedeWorkflow1Component,
     RedeWorkflow2Component,
-    RedeWorkflow3Component
+    RedeWorkflow3Component,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

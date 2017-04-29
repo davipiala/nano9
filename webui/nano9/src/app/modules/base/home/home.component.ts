@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HistoryComponent} from '../../timeline/history/history.component';
+import {ChatComponent } from  '../chat/chat.component'
 @Component({
   selector: 'b-app-home',
   templateUrl: './home.component.html',
