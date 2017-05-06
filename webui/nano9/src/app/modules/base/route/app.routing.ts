@@ -19,12 +19,13 @@ import { RedeWorkflow3Component } from '../../cadastro/rede/rede-workflow-3/rede
 import { VisitantesComponent } from '../../portaria/visitantes/visitantes.component'
 import { PrestadoresComponent } from '../../portaria/prestadores/prestadores.component'
 import { EntregasComponent } from '../../portaria/entregas/entregas.component'
+import { DadosGeraisComponent } from '../../consumo/dados-gerais/dados-gerais.component'
 
 
 const appRoutes: Routes = [
 
-    { path: '', pathMatch: 'full', component: HomeComponent, canActivate: [AuthGuard] },
-    { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+    { path: '', pathMatch: 'full', component: HomeComponent},
+    { path: 'home', component: HomeComponent },
     { path: 'login', component: LoginComponent },
     { path: 'timeline', component: HistoryComponent },
     { path: 'edificio', component: EdificioComponent },
@@ -40,7 +41,7 @@ const appRoutes: Routes = [
     { path: 'visitantes', component: VisitantesComponent },
     { path: 'prestadores', component: PrestadoresComponent },
     { path: 'entregas', component: EntregasComponent },
-
+    { path: 'dadosgerais', component: DadosGeraisComponent },
     { path: '**', redirectTo: 'not-found' }
 ];
 

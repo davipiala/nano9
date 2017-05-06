@@ -30,6 +30,7 @@ import { ChatComponent } from './modules/base/chat/chat.component';
 import { VisitantesComponent } from './modules/portaria/visitantes/visitantes.component';
 import { PrestadoresComponent } from './modules/portaria/prestadores/prestadores.component';
 import { EntregasComponent } from './modules/portaria/entregas/entregas.component';
+import { DadosGeraisComponent } from './modules/consumo/dados-gerais/dados-gerais.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { EntregasComponent } from './modules/portaria/entregas/entregas.componen
     ChatComponent,
     VisitantesComponent,
     PrestadoresComponent,
-    EntregasComponent
+    EntregasComponent,
+    DadosGeraisComponent
   ],
   imports: [
     BrowserModule,
